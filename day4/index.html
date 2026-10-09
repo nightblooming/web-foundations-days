@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Character & Word Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Quick Note & Live Counter</h1>
+      <button id="theme-toggle" type="button" aria-label="Toggle dark mode">🌙 Theme</button>
+    </header>
+
+    <div class="editor-section">
+      <label for="note-text" class="editor-label">Your Note</label>
+      <textarea 
+        id="note-text" 
+        rows="8" 
+        placeholder="Type or paste your note here..."
+        aria-describedby="char-count word-count"
+      ></textarea>
+    </div>
+
+    <div class="stats-bar">
+      <p id="char-count" class="counter">Characters: <span>0</span></p>
+      <p id="word-count" class="counter">Words: <span>0</span></p>
+    </div>
+
+    <div class="actions">
+      <button id="clear-btn" type="button">Clear Text</button>
+    </div>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>
